@@ -16,6 +16,15 @@ public class StringParsing {
     }
 
     public static int calculateCharsQuantity(String string, char condition) {
-        return 3;
+        int quantity = 0;
+        char[] chars = string.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] == condition){
+                quantity = quantity + 1;
+            }
+        }
+        return quantity;
+
+
     }
 }
